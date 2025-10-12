@@ -5,3 +5,7 @@
   package = "netlify-plugin-prerender-spa"
   [plugins.inputs]
   source = "dist"
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
