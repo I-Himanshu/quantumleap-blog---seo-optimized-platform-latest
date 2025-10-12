@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QuantumLeap Blog</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              serif: ['Lora', 'serif'],
+            },
+            colors: {
+              'primary': '#111827', // Darker gray
+              'secondary': '#1F2937',
+              'accent': '#6B7280',
+              'highlight': '#3B82F6', // Brighter blue
+              'light': '#F9FAFB', // Off-white
+              'success': '#10B981',
+              'danger': '#EF4444',
+            },
+          }
+        }
+      }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react-router-dom": "https://aistudiocdn.com/react-router-dom@^7.9.4",
+    "axios": "https://cdn.jsdelivr.net/npm/axios@1.7.2/dist/axios.min.js",
+    "express": "https://aistudiocdn.com/express@^5.1.0",
+    "jsonwebtoken": "https://aistudiocdn.com/jsonwebtoken@^9.0.2",
+    "mongoose": "https://aistudiocdn.com/mongoose@^8.19.1",
+    "dotenv": "https://aistudiocdn.com/dotenv@^17.2.3",
+    "bcryptjs": "https://aistudiocdn.com/bcryptjs@^3.0.2",
+    "slugify": "https://aistudiocdn.com/slugify@^1.6.6",
+    "cors": "https://aistudiocdn.com/cors@^2.8.5",
+    "cookie-parser": "https://aistudiocdn.com/cookie-parser@^1.4.7",
+    "fs": "https://aistudiocdn.com/fs@^0.0.1-security",
+    "url": "https://aistudiocdn.com/url@^0.11.4",
+    "path": "https://aistudiocdn.com/path@^0.12.7",
+    "multer": "https://aistudiocdn.com/multer@^2.0.2"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-light text-primary font-sans">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
