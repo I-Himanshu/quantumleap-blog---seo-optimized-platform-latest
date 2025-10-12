@@ -42,7 +42,7 @@ api.interceptors.response.use(
       } catch (refreshError) {
         localStorage.removeItem("accessToken");
         localStorage.removeItem("user");
-        window.location.href = "/login"; // Fix: Removed hash from URL
+        window.location.href = "/login";
         return Promise.reject(refreshError);
       }
     }
